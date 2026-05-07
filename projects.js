@@ -5,7 +5,7 @@ const projects = [
         domain: "UX/UI Design & SaaS",
         year: "2024",
         tags: ["Figma", "Design System", "SaaS", "UX Research"],
-        visual: "assets/images/connexia_hero.png",
+        visual: "assets/images/Connexia_hero.png",
         issue: "S'intégrer à un design system existant et concevoir de nouvelles fonctionnalités sans rompre l'existant.",
         description: "Intégration et évolution de fonctionnalités créatives au sein d'une plateforme SaaS, en respectant la logique du système en place.",
         link: "connexia.html"
