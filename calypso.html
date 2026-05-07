@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calypso Rose — Jean-Charles Fremont</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo-black.png" alt="Jean-Charles Fremont" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#projets">Projets</a></li>
+                <li><a href="methode.html">Démarche</a></li>
+                <li><a href="labo.html" class="nav-lab">Lab</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <!-- EN-TÊTE -->
+        <section class="case-study-header">
+            <h1 class="case-study-title">Calypso Rose — Quand la contrainte devient identité</h1>
+            <p class="project-meta">Direction artistique &nbsp;·&nbsp; Motion Design &nbsp;·&nbsp; Montage vidéo</p>
+        </section>
+
+
+        <!-- HÉRO FIXE -->
+        <div class="case-hero-img">
+            <img src="assets/images/Calypso_01.gif" alt="Calypso Rose — direction artistique">
+        </div>
+
+        <!-- INTRO -->
+        <section class="intro-large">
+            <p>Comment raconter une histoire rythmée avec une matière première dégradée ? Pour ce clip musical, je ne pouvais m'appuyer que sur une sélection d'images libres de droits, souvent de qualité inégale. J'ai conçu un système visuel — une surcouche graphique et typographique — pour unifier ces fragments et dicter un rythme au service exclusif de la musique.</p>
+        </section>
+
+        <!-- 5 ÉTAPES -->
+        <section class="case-steps">
+
+            <div class="case-step" id="step01">
+                <div class="step-number">01</div>
+                <div>
+                    <p class="step-label">Le Contexte</p>
+                    <div class="step-body">
+                        <p>Production d'un lyrics clip pour un projet musical de Calypso Rose. Le format exige une attention particulière au texte et au rythme, tout en proposant une identité visuelle forte pour habiller le morceau.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-step" id="step02">
+                <div class="step-number">02</div>
+                <div>
+                    <p class="step-label">Mon Rôle</p>
+                    <div class="step-body">
+                        <p>Directeur artistique et monteur vidéo — lead complet sur la conception visuelle et technique, de l'intention initiale au rendu final livré.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-step" id="step03">
+                <div class="step-number">03</div>
+                <div>
+                    <p class="step-label">Les Contraintes</p>
+                    <div class="step-body">
+                        <ul>
+                            <li><strong>Matière première contrainte</strong> — Banque d'images hétérogènes et de qualité inégale, sans possibilité de tournage.</li>
+                            <li><strong>Narration</strong> — Structurer une histoire cohérente avec des éléments disparates.</li>
+                            <li><strong>Temps de production</strong> — Délai extrêmement court, impose des choix directeurs rapides.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-step" id="step04">
+                <div class="step-number">04</div>
+                <div>
+                    <p class="step-label">L'Approche</p>
+                    <div class="step-body">
+                        <ul>
+                            <li><strong>Le tri analytique</strong> — Sélectionner les images pour leur capacité rythmique, pas seulement leur qualité.</li>
+                            <li><strong>Le système visuel</strong> — Création d'une surcouche graphique pour unifier et masquer l'hétérogénéité.</li>
+                            <li><strong>Le montage</strong> — Synchronisation millimétrée entre typographie et musique.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-step" id="step05">
+                <div class="step-number">05</div>
+                <div>
+                    <p class="step-label">Le Résultat</p>
+                    <div class="step-body">
+                        <p>Livraison d'un clip dynamique et cohérent. La contrainte initiale est devenue l'identité même de la vidéo — mettant en valeur le texte par une hiérarchisation visuelle stricte et un rythme maîtrisé.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDÉO FINALE -->
+        <div class="video-container" style="margin-top: 4rem; margin-bottom: 6rem;">
+            <iframe src="https://www.youtube.com/embed/cHPQN-msxeY" title="Calypso Rose — Lyrics Clip" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+
+        <!-- FRISE D'IMAGES -->
+        <div class="project-gallery-container">
+            <button class="gallery-nav-btn prev" onclick="this.nextElementSibling.scrollBy({left: -600, behavior: 'smooth'})" aria-label="Précédent">&#8592;</button>
+            <section class="project-gallery">
+                <div class="gallery-item"><img src="assets/images/Calypso_02.gif" alt="Calypso 02"></div>
+                <div class="gallery-item"><img src="assets/images/Calypso_03.gif" alt="Calypso 03"></div>
+                <div class="gallery-item"><img src="assets/images/Calypso_04.gif" alt="Calypso 04"></div>
+            </section>
+            <button class="gallery-nav-btn next" onclick="this.previousElementSibling.scrollBy({left: 600, behavior: 'smooth'})" aria-label="Suivant">&#8594;</button>
+        </div>
+    </main>
+
+    <!-- BARRE PROJET (STICKY) -->
+    <div class="project-sticky-bar">
+        <div class="sticky-info">
+            <span class="sticky-title">Calypso Rose</span>
+            <p class="sticky-intro">La contrainte comme matière première.</p>
+        </div>
+        <a href="index.html#projet-03" class="sticky-back">← Retour</a>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/HANDBXL" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/jean.charles.fremont/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
