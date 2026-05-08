@@ -1424,3 +1424,97 @@ body {
         margin-top: 1rem;
     }
 }
+
+/* ===========================
+   DARK MODE — préférences OS
+   =========================== */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: #0A0A0A;
+        --color-text: #F0F0F0;
+        --color-accent: #5B8AFF;
+        --color-divider: #252525;
+        --color-text-secondary: #CCCCCC;
+        --color-text-muted: #777777;
+        --color-text-caption: #999999;
+        --color-surface: #111111;
+    }
+
+    /* Logo blanc sur fond sombre */
+    .logo-img {
+        filter: invert(1);
+    }
+
+    /* Header */
+    .site-header {
+        background: rgba(10, 10, 10, 0.85);
+    }
+
+    /* Sections à fond fixe */
+    .takeaways {
+        background: var(--color-surface);
+    }
+
+    .case-hero-img {
+        background: var(--color-surface);
+    }
+
+    .lab-card-visual {
+        background: #111;
+    }
+
+    .label {
+        background: #111;
+        color: var(--color-text);
+    }
+
+    /* Sticky bar projet */
+    .project-sticky-bar {
+        background: #111;
+        border-color: #333;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .sticky-back {
+        background: #F0F0F0;
+        color: #000;
+    }
+
+    .sticky-nav {
+        background: #1a1a1a;
+    }
+
+    .sticky-nav-item:hover {
+        background: #F0F0F0;
+        color: #000;
+    }
+
+    /* Boutons flottants */
+    .floating-back-btn {
+        background: #EBEBEB;
+        color: #000;
+    }
+
+    .floating-back-btn:hover {
+        background: #CCC;
+    }
+
+    .lab-btn {
+        background: #EBEBEB;
+        color: #000;
+    }
+
+    .lab-btn:hover {
+        background: #CCC;
+    }
+
+    /* Galerie */
+    .gallery-nav-btn {
+        background: #EBEBEB;
+        color: #000;
+    }
+
+    .gallery-nav-btn:hover {
+        background: #CCC;
+    }
+}
