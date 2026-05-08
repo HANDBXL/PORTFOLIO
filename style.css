@@ -1430,14 +1430,14 @@ body {
    =========================== */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-bg: #0A0A0A;
+        --color-bg: #141414;
         --color-text: #F0F0F0;
         --color-accent: #5B8AFF;
-        --color-divider: #252525;
+        --color-divider: #2A2A2A;
         --color-text-secondary: #CCCCCC;
         --color-text-muted: #777777;
         --color-text-caption: #999999;
-        --color-surface: #111111;
+        --color-surface: #1E1E1E;
     }
 
     /* Logo blanc sur fond sombre */
@@ -1447,7 +1447,7 @@ body {
 
     /* Header */
     .site-header {
-        background: rgba(10, 10, 10, 0.85);
+        background: rgba(20, 20, 20, 0.85);
     }
 
     /* Sections à fond fixe */
@@ -1460,17 +1460,17 @@ body {
     }
 
     .lab-card-visual {
-        background: #111;
+        background: #1E1E1E;
     }
 
     .label {
-        background: #111;
+        background: #1E1E1E;
         color: var(--color-text);
     }
 
     /* Sticky bar projet */
     .project-sticky-bar {
-        background: #111;
+        background: #1E1E1E;
         border-color: #333;
         box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
     }
@@ -1481,7 +1481,7 @@ body {
     }
 
     .sticky-nav {
-        background: #1a1a1a;
+        background: #252525;
     }
 
     .sticky-nav-item:hover {
