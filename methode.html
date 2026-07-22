@@ -3,166 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Méthode & Parcours — Jean-Charles Fremont</title>
+    <title>Démarche — Jean-Charles Fremont</title>
+    <meta name="description" content="La démarche de Jean-Charles Fremont : de l'intuition au système. Parcours des Beaux-Arts au Product Design, en passant par le terrain.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Démarche — Jean-Charles Fremont">
+    <meta property="og:description" content="De l'intuition au système. Les outils changent, la démarche reste : traduire.">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://portfolio-jcf.vercel.app/methode.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo-black.png" type="image/png">
 </head>
 <body>
+
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo-black.png" alt="Jean-Charles Fremont" class="logo-img">
-                </a>
-            </div>
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="index.html" class="wordmark" aria-label="Accueil — Jean-Charles Fremont">
+                <img src="assets/signature.webp" alt="JCF" class="wordmark-sig" width="568" height="503">
+                <span class="wordmark-full">Jean-Charles Fremont</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html#projets">Projets</a></li>
-                <li><a href="labo.html" class="nav-lab">Lab</a></li>
-                <li><a href="methode.html">Démarche</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="index.html#travaux">Travaux</a></li>
+                <li><a href="methode.html" aria-current="page">Démarche</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
-        <section class="case-study-header">
-            <h1 class="case-study-title">Démarche</h1>
-            <p class="intro-large" style="margin-bottom: 2rem;">De l'intuition au système.</p>
-            <p class="subtitle" style="max-width: 60ch;">Mon parcours n’est pas une ligne droite, c’est une évolution d’échelle. J’ai commencé par concevoir des objets et des images, puis j’ai organisé des espaces et des équipes, pour aujourd’hui structurer des interfaces et des systèmes numériques. Les outils changent, mais ma démarche reste la même : traduire.</p>
+    <main id="main-content">
+        <!-- ====================== EN-TÊTE ====================== -->
+        <section class="page-head">
+            <p class="section-kicker">// Démarche</p>
+            <h1 class="page-title">De l'intuition<br>au <span class="accent">système</span>.</h1>
+            <p class="page-lead">
+                Mon parcours n'est pas une ligne droite, c'est une évolution d'échelle. J'ai d'abord conçu des objets et des images, puis organisé des espaces et des équipes, pour aujourd'hui structurer des interfaces et des systèmes numériques. Les outils changent&nbsp;; ma démarche reste la même&nbsp;: <strong>traduire</strong>.
+            </p>
         </section>
 
-        <section class="analysis-grid" id="methode">
-            <div class="analysis-item">
-                <h3>01. Immersion</h3>
-                <p><strong>Comprendre le terrain.</strong> Avant de dessiner, j'observe. Mon expérience en management m'a appris que la meilleure interface ne sert à rien si elle ne répond pas à un besoin humain réel.</p>
+        <!-- ====================== 3 TEMPS ====================== -->
+        <section class="process-section">
+            <div class="section-head" data-reveal>
+                <p class="section-kicker">// 01 — Comment je travaille</p>
+                <h2 class="section-title">Trois temps, du terrain au système.</h2>
             </div>
-            <div class="analysis-item">
-                <h3>02. Traduction</h3>
-                <p><strong>Chercher la forme.</strong> C'est la phase d'expérimentation. J'utilise le croquis, le wireframe rapide ou des outils IA pour traduire une idée brute en une première forme tangible.</p>
+
+            <ol class="process">
+                <li class="process-step" data-reveal>
+                    <span class="process-num">01</span>
+                    <h3 class="process-title">Immersion</h3>
+                    <p class="process-sub">Comprendre le terrain.</p>
+                    <p class="process-text">Avant de dessiner, j'observe. Mon expérience en management m'a appris qu'une belle interface ne sert à rien si elle ne répond pas à un besoin humain réel.</p>
+                </li>
+                <li class="process-step" data-reveal>
+                    <span class="process-num">02</span>
+                    <h3 class="process-title">Traduction</h3>
+                    <p class="process-sub">Chercher la forme.</p>
+                    <p class="process-text">La phase d'expérimentation. Croquis, wireframe rapide, outils IA — je traduis une idée brute en une première forme tangible qu'on peut juger et tester.</p>
+                </li>
+                <li class="process-step" data-reveal>
+                    <span class="process-num">03</span>
+                    <h3 class="process-title">Système</h3>
+                    <p class="process-sub">Concevoir pour durer.</p>
+                    <p class="process-text">Une fois la forme trouvée, je la rationalise. L'objectif&nbsp;: une solution minimaliste, lisible, prête à être développée et à tenir dans un design system.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- ====================== PARCOURS ====================== -->
+        <section class="parcours-section">
+            <div class="section-head" data-reveal>
+                <p class="section-kicker">// 02 — Parcours</p>
+                <h2 class="section-title">Une évolution d'échelle.</h2>
             </div>
-            <div class="analysis-item">
-                <h3>03. Système</h3>
-                <p><strong>Concevoir pour durer.</strong> Une fois la forme trouvée, je la rationalise. Le but : livrer une solution minimaliste, lisible et prête à être développée dans un Design System.</p>
+
+            <div class="parcours">
+                <article class="parcours-item" data-reveal>
+                    <span class="parcours-label">Fondations — la matière &amp; l'espace</span>
+                    <h3 class="parcours-title">L'exigence visuelle issue des Beaux-Arts.</h3>
+                    <p class="parcours-text">Mon socle est artistique. Formé au design d'objet, diplômé des Beaux-Arts du Mans, j'ai exploré le passage de la 2D à la 3D. J'ai affiné cette relation au visuel à La Cambre, avant de me lancer comme graphiste indépendant.</p>
+                    <p class="parcours-take"><span>Ce que j'en garde</span> Le sens du détail chirurgical et la compréhension profonde de la structure d'une forme.</p>
+                </article>
+
+                <article class="parcours-item" data-reveal>
+                    <span class="parcours-label">Maturité — le terrain &amp; l'humain</span>
+                    <h3 class="parcours-title">La gestion du réel et de la crise.</h3>
+                    <p class="parcours-text">En parallèle du graphisme, j'ai pris des responsabilités managériales dans le commerce. J'ai dû concevoir l'espace, mais surtout l'organisation, et guider des équipes durant la crise du Covid.</p>
+                    <p class="parcours-take"><span>Ce que j'en garde</span> L'empathie terrain et l'art de trouver des solutions claires sous pression.</p>
+                </article>
+
+                <article class="parcours-item" data-reveal>
+                    <span class="parcours-label">Aujourd'hui — l'interface &amp; le système</span>
+                    <h3 class="parcours-title">La convergence vers le Product Design.</h3>
+                    <p class="parcours-text">Je fais converger ces compétences vers le Product Design. De Figma au prototypage assisté par l'IA, je donne forme à mes idées sans attendre et je continue de traduire des besoins complexes en solutions claires.</p>
+                    <p class="parcours-take"><span>Ce que j'apporte</span> Direction artistique pointue et pensée systémique — dans un seul profil.</p>
+                </article>
             </div>
         </section>
 
-        <section class="timeline-section">
-            <h2 class="section-heading" style="margin-bottom: 6rem;">Mon Parcours</h2>
-            
-            <div class="timeline-item">
-                <span class="timeline-label">Fondations — La Matière & L'Espace</span>
-                <h3 class="timeline-title">L'exigence visuelle issue des Beaux-Arts.</h3>
-                <div class="timeline-content">
-                    <p>Mon socle est artistique. Formé au design d'objet, puis diplômé des Beaux-Arts du Mans, j'ai exploré le passage de la 2D à la 3D. J'ai affiné cette relation au visuel à La Cambre, avant de me lancer en tant que graphiste indépendant.</p>
-                </div>
-                <div class="timeline-takeaway">
-                    <strong>Ce que j'en garde :</strong> Le sens du détail chirurgical et la compréhension profonde de la structure d'une forme.
-                </div>
+        <!-- ====================== COMPÉTENCES ====================== -->
+        <section class="skills-section">
+            <div class="section-head" data-reveal>
+                <p class="section-kicker">// 03 — Compétences &amp; outils</p>
+                <h2 class="section-title">La boîte à outils.</h2>
             </div>
 
-            <div class="timeline-item">
-                <span class="timeline-label">Maturité — Le Terrain & L'Humain</span>
-                <h3 class="timeline-title">La gestion du réel et de la crise.</h3>
-                <div class="timeline-content">
-                    <p>Parallèlement à mon activité de graphiste, j'ai pris des responsabilités managériales dans le commerce. J'ai dû concevoir l'espace, mais surtout concevoir l'organisation et guider des équipes durant la crise du Covid.</p>
-                </div>
-                <div class="timeline-takeaway">
-                    <strong>Ce que j'en garde :</strong> L'empathie terrain et l'art de trouver des solutions claires sous pression.
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <span class="timeline-label">Aujourd'hui — L'Interface & Le Système</span>
-                <h3 class="timeline-title">La convergence vers le Product Design.</h3>
-                <div class="timeline-content">
-                    <p>Aujourd'hui, je fais converger ces compétences vers le Product Design. De Figma à l'IA en passant par le vibe coding, je continue de traduire des besoins complexes en solutions créatives cohérentes.</p>
-                </div>
-                <div class="timeline-takeaway">
-                    <strong>Ce que j'apporte :</strong> Direction artistique pointue et pensée systémique — en un seul profil.
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section" style="margin-top: 6rem; margin-bottom: 12rem;">
-            <h2 class="section-heading" style="margin-bottom: 3rem;">Compétences & Outils</h2>
-            <div class="skills-table">
+            <div class="skills" data-reveal>
                 <div class="skills-row">
-                    <span class="skill-category-label">Design UX/UI</span>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Figma</span>
-                        <span class="skill-pill">Design Systems</span>
-                        <span class="skill-pill">Prototypage</span>
-                        <span class="skill-pill">User Flows</span>
-                        <span class="skill-pill">Wireframing</span>
-                    </div>
-                </div>
-                <div class="skills-row">
-                    <span class="skill-category-label">Direction Artistique</span>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Identité visuelle</span>
-                        <span class="skill-pill">Motion Design</span>
-                        <span class="skill-pill">Typographie</span>
-                        <span class="skill-pill">Adobe Suite</span>
-                    </div>
-                </div>
-                <div class="skills-row">
-                    <span class="skill-category-label">Tech & Outils</span>
-                    <div class="skill-pills">
-                        <span class="skill-pill">AI Workflow</span>
-                        <span class="skill-pill">CSS / HTML</span>
-                        <span class="skill-pill">Vibe Coding <span style="font-weight:400;opacity:0.6;">(itération rapide AI-assisted)</span></span>
-                        <span class="skill-pill">Claude</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="availability-section container" style="border-top: 1px solid #000; padding-top: 8rem; margin-top: 8rem;">
-            <h2 class="section-heading" style="margin-bottom: 2rem;">On travaille ensemble ?</h2>
-            <div class="availability-grid">
-                <div class="status-box">
-                    <p class="intro-large">Disponible immédiatement — à la recherche d'un poste à temps plein.</p>
-                    <p class="subtitle" style="margin-top: 2rem;">Mon objectif est de m'ancrer durablement au sein d'une équipe produit, d'une agence ou d'une entreprise SaaS (sur Bruxelles ou en format hybride).</p>
-                </div>
-                <div class="roles-box">
-                    <h3 style="font-size: 0.8rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem;">Rôles visés :</h3>
-                    <ul style="list-style: none; font-size: 1.1rem; line-height: 1.6; font-weight: 500;">
-                        <li>UX/UI Designer</li>
-                        <li>Product Designer</li>
-                        <li>Designer visuel hybride</li>
+                    <span class="skills-cat">Design UX/UI</span>
+                    <ul class="skills-pills">
+                        <li>Figma</li><li>Design Systems</li><li>Prototypage</li><li>User Flows</li><li>Wireframing</li>
                     </ul>
-                    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top: 3rem; align-items:center;">
-                        <a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank" class="cta-scroll">Me contacter ➔</a>
-                        <a href="assets/CV_JC_Fremont.pdf" download class="cta-scroll">Télécharger CV ➔</a>
-                    </div>
+                </div>
+                <div class="skills-row">
+                    <span class="skills-cat">Direction artistique</span>
+                    <ul class="skills-pills">
+                        <li>Identité visuelle</li><li>Motion Design</li><li>Typographie</li><li>Adobe Suite</li><li>Illustration</li>
+                    </ul>
+                </div>
+                <div class="skills-row">
+                    <span class="skills-cat">Prototypage &amp; IA</span>
+                    <ul class="skills-pills">
+                        <li>Prototypage rapide</li><li>Vibe coding</li><li>IA générative</li><li>Claude</li><li>Vercel</li>
+                    </ul>
                 </div>
             </div>
         </section>
+
+        <!-- ====================== CONTACT (partagé) ====================== -->
     </main>
 
-    <!-- BARRE PROJET (STICKY) -->
-    <div class="project-sticky-bar">
-        <div class="sticky-info">
-            <span class="sticky-title">Démarche</span>
-            <p class="sticky-intro">De l'intuition sensible au système fonctionnel.</p>
-        </div>
-        <a href="index.html" class="sticky-back">← Retour</a>
-    </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/HANDBXL" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.instagram.com/jean.charles.fremont/" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <script src="components.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

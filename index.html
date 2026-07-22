@@ -3,80 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jean-Charles Fremont — UX & Visual Designer</title>
-    <meta name="description" content="Portfolio de Jean-Charles Fremont, UX & Visual Designer spécialisé dans la traduction d'intentions visuelles en systèmes clairs.">
-    <!-- Google Fonts: Inter (System) & Syne (Sensible) -->
+    <title>Jean-Charles Fremont — Designer · Bruxelles</title>
+    <meta name="description" content="Jean-Charles Fremont, designer à Bruxelles. Je viens du dessin, j'ai appris à penser en systèmes. Interfaces, illustration, prototypes codés.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#EEF1F4">
+    <link rel="canonical" href="https://portfolio-jcf.vercel.app/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jean-Charles Fremont — Designer · Bruxelles">
+    <meta property="og:description" content="Je viens du dessin. J'ai appris à penser en systèmes.">
+    <meta property="og:url" content="https://portfolio-jcf.vercel.app">
+    <meta property="og:image" content="https://portfolio-jcf.vercel.app/assets/images/Connexia_hero.png">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo-black.png" type="image/png">
-    <!-- Hotjar Tracking Code for portfolio -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:6716768,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo-black.png" alt="Jean-Charles Fremont" class="logo-img">
-                </a>
-            </div>
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="index.html" class="wordmark" aria-label="Accueil — Jean-Charles Fremont">
+                <img src="assets/signature.webp" alt="JCF" class="wordmark-sig" width="568" height="503">
+                <span class="wordmark-full">Jean-Charles Fremont</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="labo.html" class="nav-lab">Lab</a></li>
+                <li><a href="#travaux">Travaux</a></li>
                 <li><a href="methode.html">Démarche</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1 class="manifesto">
-                    <span class="hero-dynamic-phrase">Design de <em>systèmes UX clairs</em> pour projets complexes.</span>
+    <main id="main-content">
+        <section class="hero" id="top">
+            <!-- Trame système + GIF signature -->
+            <div class="hero-canvas" aria-hidden="true">
+                <div class="grid-dots"></div>
+                <img class="hero-gif" src="assets/hero-icon-loop.webp" alt="" width="450" height="550" fetchpriority="high" data-static="assets/hero-icon-static-t.webp">
+            </div>
+
+            <div class="hero-inner">
+                <h1 class="hero-title">
+                    <span class="line">Une boîte à outils <span class="accent">créative</span>.</span>
+                    <span class="line">Du <span class="accent">trait<svg class="ul" viewBox="0 0 220 14" preserveAspectRatio="none" aria-hidden="true"><path d="M3,9 C50,3 120,12 217,5" fill="none"/></svg></span> à l'interface,<br class="br-mobile"> de l'intention à la <span class="accent">forme</span>.</span>
                 </h1>
-                <p class="subtitle">
-                    Designer hybride — direction artistique et pensée système. Je conçois des interfaces qui tiennent autant à l'usage qu'à l'image.
+
+                <p class="hero-sub">
+                    Basé à Bruxelles. Designer aguerri, je conjugue dessin, création et une lecture juste du besoin client. Ce que j'apporte à une équipe&nbsp;: un œil exigeant, des ponts entre les disciplines, et l'envie constante d'expérimenter.
                 </p>
-                <div class="cta-container">
-                    <a href="#projets" class="cta-scroll">Découvrir les projets ↓</a>
+
+                <div class="hero-cta">
+                    <a href="#travaux" class="btn btn-primary">Voir les travaux</a>
+                    <a href="#contact" class="btn btn-ghost">Me contacter</a>
                 </div>
+            </div>
+
+            <a href="#travaux" class="scroll-hint" aria-label="Défiler vers les travaux">
+                <span>défiler</span>
+                <span class="scroll-arrow" aria-hidden="true">↓</span>
+            </a>
+        </section>
+
+        <!-- ====================== TRAVAUX ====================== -->
+        <section id="travaux" class="travaux">
+            <div class="section-head">
+                <p class="section-kicker">// 01 — Travaux</p>
+                <h2 class="section-title">Du brief ou de moi-même.<br>Toujours&nbsp;: traduire un besoin en système&nbsp;visuel.</h2>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filtrer les travaux">
+                <button class="filter is-active" data-filter="all" aria-pressed="true">Tous <span class="filter-count"></span></button>
+                <button class="filter" data-filter="UX" aria-pressed="false">UX</button>
+                <button class="filter" data-filter="Design graphique" aria-pressed="false">Design graphique</button>
+                <button class="filter" data-filter="Illustration" aria-pressed="false">Illustration</button>
+            </div>
+
+            <div class="works-grid" id="works-grid">
+                <!-- injecté via projects.js / main.js -->
             </div>
         </section>
 
+        <!-- ====================== SIGNAL ====================== -->
+        <section id="signal" class="signal">
+            <div class="section-head" data-reveal>
+                <p class="section-kicker">// 02 — Ce que j'apporte à une équipe</p>
+                <h2 class="section-title">Trois forces, réunies dans un seul profil.</h2>
+            </div>
 
-        <section id="projets" class="projects-grid">
-            <!-- Injecté via JS -->
+            <div class="signal-grid">
+                <article class="signal-card" data-reveal>
+                    <p class="signal-label">01 — Œil</p>
+                    <h3 class="signal-title">La culture visuelle</h3>
+                    <p class="signal-text">Beaux-Arts, illustration, direction artistique. Je sais ce qui fait qu'une image tient — composition, rythme, intention — et je mets cet œil au service de chaque interface.</p>
+                    <div class="signal-ico" aria-hidden="true">
+                        <img class="signal-gif" src="assets/skill-oeil-loop.webp" alt="" loading="lazy" data-static="assets/skill-oeil-static.webp">
+                    </div>
+                </article>
+
+                <article class="signal-card" data-reveal>
+                    <p class="signal-label">02 — Système</p>
+                    <h3 class="signal-title">La rigueur UX</h3>
+                    <p class="signal-text">Design systems, flows, composants. Je structure la complexité en règles claires et réutilisables, prêtes pour l'équipe et pour le développement.</p>
+                    <div class="signal-ico" aria-hidden="true">
+                        <img class="signal-gif" src="assets/skill-systeme-loop.webp" alt="" loading="lazy" data-static="assets/skill-systeme-static.webp">
+                    </div>
+                </article>
+
+                <article class="signal-card" data-reveal>
+                    <p class="signal-label">03 — Élan</p>
+                    <h3 class="signal-title">L'autonomie créative</h3>
+                    <p class="signal-text">Je donne forme à mes idées sans attendre — maquettes, motion, prototypes assistés par l'IA. Une boîte à outils que j'élargis au fil des projets, portée par l'envie d'apprendre.</p>
+                    <div class="signal-ico" aria-hidden="true">
+                        <img class="signal-gif" src="assets/skill-elan-loop.webp" alt="" loading="lazy" data-static="assets/skill-elan-static.webp">
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section id="contact" class="availability-section container">
-            <h2 class="section-heading" style="margin-bottom: 2rem;">On travaille ensemble ?</h2>
-            <div class="availability-grid">
-                <div class="status-box">
-                    <p class="intro-large">Disponible immédiatement — à la recherche d'un poste à temps plein.</p>
-                    <p class="subtitle" style="margin-top: 2rem;">Mon objectif est de m'ancrer durablement au sein d'une équipe produit, d'une agence ou d'une entreprise SaaS (sur Bruxelles ou en format hybride).</p>
-                </div>
-                <div class="roles-box">
-                    <h3>Rôles visés :</h3>
-                    <ul>
-                        <li>UX/UI Designer</li>
-                        <li>Product Designer</li>
-                        <li>Designer visuel hybride</li>
-                    </ul>
-                    <div style="display:flex; gap:2rem; flex-wrap:wrap; margin-top: 3rem; align-items:center;">
-                        <a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank" class="cta-scroll">Me contacter ➔</a>
-                        <a href="assets/CV_JC_Fremont.pdf" download class="cta-scroll">Télécharger CV ➔</a>
+        <!-- ====================== CONTACT ====================== -->
+        <section id="contact" class="contact">
+            <div class="contact-inner" data-reveal>
+                <p class="section-kicker">// 03 — Contact</p>
+                <h2 class="contact-head">On travaille<br>ensemble&nbsp;?</h2>
+                <p class="contact-lead">Professionnel engagé, je veux m'ancrer dans une équipe solide, y apporter ma rigueur et ma créativité, et construire dans la durée. Bruxelles ou hybride.</p>
+
+                <div class="contact-cols">
+                    <div class="contact-col">
+                        <p class="contact-k">Rôles visés</p>
+                        <ul class="contact-list">
+                            <li>UX/UI Designer</li>
+                            <li>Product Designer</li>
+                            <li>Designer visuel hybride</li>
+                        </ul>
+                    </div>
+                    <div class="contact-col">
+                        <p class="contact-k">Écrire</p>
+                        <a class="contact-link" href="mailto:jeancharlesfremont@gmail.com">jeancharlesfremont@gmail.com <span aria-hidden="true">↗</span></a>
+                        <a class="contact-link" href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+                        <a class="contact-link" href="assets/CV_JC_Fremont.pdf" download>Télécharger le CV <span aria-hidden="true">↓</span></a>
                     </div>
                 </div>
             </div>
@@ -84,18 +153,18 @@
     </main>
 
     <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/HANDBXL" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.instagram.com/jean.charles.fremont/" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
+        <div class="footer-inner">
+            <img src="assets/signature.webp" alt="JCF" class="footer-sig" width="568" height="503">
+            <ul class="footer-social">
+                <li><a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="https://github.com/HANDBXL" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://www.instagram.com/jean.charles.fremont/" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+            <span class="footer-meta">Bruxelles, Belgique</span>
         </div>
     </footer>
 
-    <script src="projects.js"></script>
+    <script src="projects.js?v=3"></script>
     <script src="main.js"></script>
 </body>
 </html>

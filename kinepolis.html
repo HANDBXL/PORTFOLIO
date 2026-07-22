@@ -4,157 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinepolis — Jean-Charles Fremont</title>
+    <meta name="description" content="Kinepolis — repenser le tunnel d'achat d'une billetterie mobile pour éliminer la friction. Conception UX/UI end-to-end.">
+    <meta property="og:title" content="Kinepolis — Jean-Charles Fremont">
+    <meta property="og:image" content="https://portfolio-jcf.vercel.app/assets/images/KINEPOLIS-cover.png">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://portfolio-jcf.vercel.app/kinepolis.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/logo-black.png" type="image/png">
-    <!-- Hotjar Tracking Code for portfolio -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:6716768,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
 </head>
 <body>
 
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
     <header class="site-header">
-        <nav class="nav-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/logo-black.png" alt="Jean-Charles Fremont" class="logo-img">
-                </a>
-            </div>
+        <nav class="nav" aria-label="Navigation principale">
+            <a href="index.html" class="wordmark" aria-label="Accueil — Jean-Charles Fremont">
+                <img src="assets/signature.webp" alt="JCF" class="wordmark-sig" width="568" height="503">
+                <span class="wordmark-full">Jean-Charles Fremont</span>
+            </a>
             <ul class="nav-links">
-                <li><a href="index.html#projets">Projets</a></li>
-                <li><a href="labo.html" class="nav-lab">Lab</a></li>
+                <li><a href="index.html#travaux" aria-current="page">Travaux</a></li>
                 <li><a href="methode.html">Démarche</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="case" data-sub="Un parcours d'achat mobile clair et rapide">
+        <a href="index.html#travaux" class="case-back"><span aria-hidden="true">←</span> Travaux</a>
 
-        <!-- EN-TÊTE -->
-        <section class="case-study-header">
-            <h1 class="case-study-title">Kinepolis — Le chemin le plus court vers le bon siège</h1>
-            <p class="project-meta">UX/UI Design &nbsp;·&nbsp; Application mobile &nbsp;·&nbsp; Billetterie</p>
-        </section>
-
-        <!-- HÉRO -->
-        <div class="case-hero-img">
-            <img src="assets/images/KINEPOLIS-cover.png" alt="Kinepolis — Interface de commande de billets">
+        <div class="case-head">
+            <p class="case-meta"><span class="cat">UX</span><span>UX/UI Design</span><span>Application mobile</span><span>Billetterie</span></p>
+            <h1 class="case-title">Kinepolis — le chemin le plus court vers le bon siège</h1>
         </div>
 
-        <!-- INTRO -->
-        <section class="intro-large">
-            <p>Comment rendre fluide un parcours d'achat naturellement complexe ? Commander un billet de cinéma implique une succession de décisions — film, séance, salle, siège, tarif, paiement — chacune pouvant générer de la friction et de l'abandon. Pour ce projet de conception end-to-end, l'enjeu était de transformer ce tunnel en une expérience mobile claire, rapide et rassurante.</p>
-        </section>
+        <div class="case-hero">
+            <picture><source srcset="assets/images/KINEPOLIS-cover.webp" type="image/webp"><img src="assets/images/KINEPOLIS-cover.png" alt="Kinepolis — interface de commande de billets"></picture>
+        </div>
 
-        <!-- 5 ÉTAPES -->
+        <p class="case-intro">Un parcours d'achat riche&nbsp;: film, séance, salle, siège, tarif, paiement. Autant de décisions à enchaîner avec évidence. L'idée&nbsp;: faire de ce tunnel une expérience mobile claire, rapide et rassurante, où chaque écran mène naturellement au suivant.</p>
+
         <section class="case-steps">
-
-            <div class="case-step" id="step01">
-                <div class="step-number">01</div>
-                <div>
-                    <p class="step-label">Le Contexte</p>
-                    <div class="step-body">
-                        <p>Exercice de conception UX/UI sur un cas réel : repenser l'application de commande de billets de Kinepolis. L'objectif — concevoir un parcours d'achat mobile de bout en bout, de la sélection du film à la confirmation de réservation.</p>
-                    </div>
-                </div>
+            <div class="case-step">
+                <div class="case-step-side"><span class="case-step-num">01</span><span class="case-step-label">Le terrain</span></div>
+                <div class="case-step-body"><p>Exercice de conception UX/UI sur un cas réel&nbsp;: repenser l'application de commande de billets de Kinepolis. Concevoir un parcours mobile de bout en bout, de la sélection du film à la confirmation de réservation.</p></div>
             </div>
-
-            <div class="case-step" id="step02">
-                <div class="step-number">02</div>
-                <div>
-                    <p class="step-label">Mon Rôle</p>
-                    <div class="step-body">
-                        <p>Designer UX/UI en charge de la conception complète — définition des flows utilisateurs, wireframes, maquettes haute-fidélité et logique d'interaction.</p>
-                    </div>
-                </div>
+            <div class="case-step">
+                <div class="case-step-side"><span class="case-step-num">02</span><span class="case-step-label">Mon rôle</span></div>
+                <div class="case-step-body"><p>Designer UX/UI en charge de la conception complète — définition des flows utilisateurs, wireframes, maquettes haute-fidélité et logique d'interaction.</p></div>
             </div>
-
-            <div class="case-step" id="step03">
-                <div class="step-number">03</div>
-                <div>
-                    <p class="step-label">Les Contraintes</p>
-                    <div class="step-body">
-                        <ul>
-                            <li><strong>Tunnel multi-étapes</strong> — Film, séance, salle, siège, tarif, paiement : enchaîner sans perdre l'utilisateur.</li>
-                            <li><strong>Mobile-first</strong> — Concevoir pour une décision rapide, en situation, sur smartphone.</li>
-                            <li><strong>Cohérence de marque</strong> — S'inscrire dans l'univers Kinepolis tout en modernisant l'expérience.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="case-step">
+                <div class="case-step-side"><span class="case-step-num">03</span><span class="case-step-label">Le défi</span></div>
+                <div class="case-step-body"><ul>
+                    <li><strong>Tunnel multi-étapes</strong> — film, séance, salle, siège, tarif, paiement&nbsp;: enchaîner ces choix avec fluidité.</li>
+                    <li><strong>Mobile-first</strong> — concevoir pour une décision rapide, en situation, sur smartphone.</li>
+                    <li><strong>Cohérence de marque</strong> — prolonger l'univers Kinepolis et moderniser l'expérience.</li>
+                </ul></div>
             </div>
-
-            <div class="case-step" id="step04">
-                <div class="step-number">04</div>
-                <div>
-                    <p class="step-label">L'Approche</p>
-                    <div class="step-body">
-                        <ul>
-                            <li><strong>Réduction de friction</strong> — Identifier et supprimer chaque étape superflue dans le tunnel d'achat.</li>
-                            <li><strong>Hiérarchie visuelle</strong> — Guider l'œil vers les informations clés à chaque écran (horaire, salle, prix).</li>
-                            <li><strong>Feedback immédiat</strong> — Confirmer chaque sélection pour rassurer l'utilisateur tout au long du parcours.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="case-step">
+                <div class="case-step-side"><span class="case-step-num">04</span><span class="case-step-label">Ma méthode</span></div>
+                <div class="case-step-body"><ul>
+                    <li><strong>Parcours resserré</strong> — garder les étapes qui comptent et fluidifier tout le reste.</li>
+                    <li><strong>Hiérarchie visuelle</strong> — guider l'œil vers les infos clés à chaque écran (horaire, salle, prix).</li>
+                    <li><strong>Feedback immédiat</strong> — confirmer chaque sélection pour rassurer tout au long du parcours.</li>
+                </ul></div>
             </div>
-
-            <div class="case-step" id="step05">
-                <div class="step-number">05</div>
-                <div>
-                    <p class="step-label">Le Résultat</p>
-                    <div class="step-body">
-                        <p>Un parcours d'achat en étapes claires, avec une interface mobile épurée. La sélection de siège et le tunnel de paiement ont été repensés pour minimiser les abandons et maximiser la lisibilité à chaque point de décision.</p>
-                    </div>
-                </div>
+            <div class="case-step">
+                <div class="case-step-side"><span class="case-step-num">05</span><span class="case-step-label">L'impact</span></div>
+                <div class="case-step-body"><p>Un parcours d'achat en étapes claires, porté par une interface mobile épurée. La sélection de siège et le tunnel de paiement ont été repensés pour porter l'utilisateur jusqu'à la confirmation, avec une lisibilité nette à chaque point de décision.</p></div>
             </div>
         </section>
 
-        <!-- FRISE D'IMAGES -->
-        <div class="project-gallery-container">
-            <button class="gallery-nav-btn prev js-gallery-prev" aria-label="Précédent">&#8592;</button>
-            <section class="project-gallery">
-                <div class="gallery-item"><img src="assets/images/KINEPOLIS-01-1.png" alt="Kinepolis — écran principal"></div>
-                <div class="gallery-item"><img src="assets/images/KINEPOLIS-01-2.png" alt="Kinepolis — système typographique"></div>
-                <div class="gallery-item"><img src="assets/images/KINEPOLIS-01-3.png" alt="Kinepolis — détail interface"></div>
-                <div class="gallery-item"><img src="assets/images/KINEPOLIS-02.png" alt="Kinepolis — sélection de séance"></div>
-                <div class="gallery-item"><img src="assets/images/KINEPOLIS-03.png" alt="Kinepolis — tunnel de réservation"></div>
+        <div class="gallery-wrap">
+            <section class="gallery" tabindex="0" aria-label="Galerie — écrans Kinepolis, défilement horizontal">
+                <div class="gallery-item"><picture><source srcset="assets/images/KINEPOLIS-01-2.webp" type="image/webp"><img src="assets/images/KINEPOLIS-01-2.png" alt="Kinepolis — système typographique" loading="lazy"></picture></div>
+                <div class="gallery-item"><picture><source srcset="assets/images/KINEPOLIS-01-3.webp" type="image/webp"><img src="assets/images/KINEPOLIS-01-3.png" alt="Kinepolis — détail interface" loading="lazy"></picture></div>
+                <div class="gallery-item"><picture><source srcset="assets/images/KINEPOLIS-02.webp" type="image/webp"><img src="assets/images/KINEPOLIS-02.png" alt="Kinepolis — sélection de séance" loading="lazy"></picture></div>
+                <div class="gallery-item"><picture><source srcset="assets/images/KINEPOLIS-03.webp" type="image/webp"><img src="assets/images/KINEPOLIS-03.png" alt="Kinepolis — tunnel de réservation" loading="lazy"></picture></div>
             </section>
-            <button class="gallery-nav-btn next js-gallery-next" aria-label="Suivant">&#8594;</button>
+            <div class="gallery-controls">
+                <button class="gallery-btn js-gallery-prev" aria-label="Précédent">←</button>
+                <button class="gallery-btn js-gallery-next" aria-label="Suivant">→</button>
+            </div>
         </div>
 
     </main>
 
-    <!-- BARRE PROJET (STICKY) -->
-    <div class="project-sticky-bar">
-        <div class="sticky-info">
-            <span class="sticky-title">Kinepolis</span>
-            <p class="sticky-intro">Le chemin le plus court vers le bon siège.</p>
-        </div>
-        <a href="index.html#projet-04" class="sticky-back">← Retour</a>
-    </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/fremontjeancharles/" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://github.com/HANDBXL" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.instagram.com/jean.charles.fremont/" target="_blank">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
+    <script src="projects.js?v=3"></script>
+    <script src="components.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
