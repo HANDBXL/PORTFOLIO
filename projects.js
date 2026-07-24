@@ -36,7 +36,7 @@ const projects = [
         tags: ["Illustration", "Édition"],
         visual: "assets/rapbook-thumb.webp",
         motion: "assets/rapbook-thumb.mp4",
-        excerpt: "Trois éditions papier — livre accordéon, fanzine, affiche — qui explorent le rap par le dessin, de l'encre au produit fini.",
+        excerpt: "Deux éditions papier — receuil, livre accordéon, illustrations — qui explorent le rap par le dessin, de l'encre au produit fini.",
         link: "rapbook.html",
         external: false
     },
