@@ -25,12 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
 
-    // Mouvements réduits : images animées → statiques, vidéos décoratives stoppées
+    // Mouvements réduits : vidéos décoratives stoppées.
+    // (Les illustrations animées sont gérées en CSS/HTML via <picture> :
+    //  variantes statiques et dark mode choisies par media queries.)
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) {
-        document.querySelectorAll('img[data-static]').forEach(img => {
-            if (img.dataset.static) img.src = img.dataset.static;
-        });
         document.querySelectorAll('video[autoplay]').forEach(v => {
             v.removeAttribute('autoplay');
             v.pause();
@@ -100,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         filters.forEach(btn => btn.addEventListener('click', () => applyFilter(btn)));
 
-        // Filtre initial depuis l'URL (#travaux:Client, #travaux:Side%20Project…)
+        // Filtre initial depuis l'URL (#travaux:UX, #travaux:Design%20graphique…)
         const hashFilter = decodeURIComponent((location.hash.match(/^#travaux:(.+)$/) || [])[1] || '');
         if (hashFilter) {
             const btn = document.querySelector(`.filter[data-filter="${hashFilter}"]`);

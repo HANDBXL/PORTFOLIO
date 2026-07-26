@@ -4,7 +4,11 @@
    ============================================================ */
 
 :root {
-    color-scheme: light; /* site light-only : évite les contrôles UA sombres en dark mode OS */
+    color-scheme: light dark; /* les contrôles natifs suivent le thème */
+
+    /* Couleur du texte sur les sections toujours sombres (contact, footer).
+       Constante : ne suit PAS le thème, sinon texte sombre sur fond sombre. */
+    --on-dark:      #EEF1F4;
 
     /* --- Couleur ----------------------------------------------------- */
     --bg:           #EEF1F4;   /* gris bleuté froid */
@@ -43,21 +47,18 @@
         --surface:      #1C2229;   /* cartes, surfaces */
         --ink:          #EEF1F4;   /* texte principal */
         --ink-soft:     #B0BCC8;   /* texte secondaire */
-        --muted:        #6A7A8A;   /* labels, captions */
+        --muted:        #8794A1;   /* labels, captions — contraste AA sur bg ET surface */
         --line:         #252D37;   /* filets, bordures */
 
-        --accent:       #4D7CFF;   /* bleu plus lumineux sur fond sombre */
-        --accent-ink:   #6B96FF;
-        --accent-bright:#4D7CFF;
+        /* Accent dark : jaune signal — complémentaire du bleu électrique du mode
+           clair, lu comme une inversion jour/nuit assumée. Contraste 11 à 14:1
+           selon le fond, là où le bleu tombait à 4,3:1 sur les cartes. */
+        --accent:       #FFD24D;
+        --accent-ink:   #FFC01F;   /* survol / état actif, plus dense */
+        --accent-bright:#FFD24D;
     }
-
-    /* Signature noire → blanche en dark */
-    .wordmark-sig,
-    .footer-sig { filter: invert(1); }
-
-    /* Le footer ultra-sombre se distingue légèrement */
-    .site-footer { background: #05060A; }
-    .contact     { background: #0A0C10; }
+    /* NB : les surcharges de composants pour le dark mode sont regroupées
+       en fin de fichier (sinon les règles suivantes les écrasent). */
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -79,6 +80,10 @@ body {
 }
 
 a { color: inherit; text-decoration: none; }
+
+/* Les <picture> servent uniquement à choisir la source (thème / mouvement) :
+   ils ne doivent pas peser sur la mise en page, seul l'<img> compte. */
+picture { display: contents; }
 
 /* Focus clavier visible partout, sans polluer la navigation souris */
 :focus-visible {
@@ -135,7 +140,6 @@ a { color: inherit; text-decoration: none; }
 .wordmark { display: flex; align-items: center; gap: .6rem; }
 .wordmark-sig {
     height: 36px; width: auto;
-    filter: invert(0);
     display: block;
 }
 /* Le footer est toujours sombre : signature inversée en blanc */
@@ -572,7 +576,7 @@ a { color: inherit; text-decoration: none; }
    ============================================================ */
 .contact {
     background: #08090C;
-    color: var(--bg);
+    color: var(--on-dark);
 }
 .contact-inner {
     max-width: var(--maxw); margin: 0 auto;
@@ -585,19 +589,19 @@ a { color: inherit; text-decoration: none; }
     letter-spacing: -.03em; margin: 1rem 0 1.6rem;
 }
 .contact-lead {
-    color: color-mix(in srgb, var(--bg) 78%, transparent);
+    color: color-mix(in srgb, var(--on-dark) 78%, transparent);
     max-width: 46ch; font-size: 1.05rem; margin-bottom: 3.5rem;
 }
 .contact-cols {
     display: grid; grid-template-columns: 1fr 1fr;
     gap: 2.5rem; max-width: 44rem;
-    border-top: 1px solid color-mix(in srgb, var(--bg) 22%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--on-dark) 22%, transparent);
     padding-top: 2.5rem;
 }
 .contact-k {
     font-family: var(--font-mono); font-size: .76rem;
     text-transform: uppercase; letter-spacing: .08em;
-    color: color-mix(in srgb, var(--bg) 55%, transparent);
+    color: color-mix(in srgb, var(--on-dark) 62%, transparent);
     margin-bottom: 1.1rem;
 }
 .contact-list { list-style: none; }
@@ -605,7 +609,7 @@ a { color: inherit; text-decoration: none; }
 .contact-link {
     display: flex; align-items: center; justify-content: space-between;
     gap: 1rem; padding: .55rem 0;
-    border-bottom: 1px solid color-mix(in srgb, var(--bg) 18%, transparent);
+    border-bottom: 1px solid color-mix(in srgb, var(--on-dark) 18%, transparent);
     font-size: 1rem; transition: color .2s var(--ease), padding .25s var(--ease);
 }
 .contact-link span { color: var(--accent-bright); }
@@ -618,11 +622,11 @@ a { color: inherit; text-decoration: none; }
 /* ============================================================
    FOOTER
    ============================================================ */
-.site-footer { background: #08090C; color: var(--bg); }
+.site-footer { background: #08090C; color: var(--on-dark); }
 .footer-inner {
     max-width: var(--maxw); margin: 0 auto;
     padding: 2.2rem var(--pad);
-    border-top: 1px solid color-mix(in srgb, var(--bg) 16%, transparent);
+    border-top: 1px solid color-mix(in srgb, var(--on-dark) 16%, transparent);
     display: flex; align-items: center; justify-content: space-between;
     flex-wrap: wrap; gap: 1rem;
 }
@@ -630,13 +634,13 @@ a { color: inherit; text-decoration: none; }
 .footer-social { display: flex; gap: 1.5rem; list-style: none; }
 .footer-social a {
     font-family: var(--font-mono); font-size: .82rem;
-    color: color-mix(in srgb, var(--bg) 70%, transparent);
+    color: color-mix(in srgb, var(--on-dark) 70%, transparent);
     transition: color .2s var(--ease);
 }
 .footer-social a:hover { color: var(--accent-bright); }
 .footer-meta {
     font-family: var(--font-mono); font-size: .76rem;
-    color: color-mix(in srgb, var(--bg) 50%, transparent);
+    color: color-mix(in srgb, var(--on-dark) 58%, transparent);
 }
 
 /* ============================================================
@@ -962,5 +966,38 @@ a { color: inherit; text-decoration: none; }
     }
     .hero-title .ul path { stroke-dashoffset: 0 !important; }
     .hero-label, .hero-title .line, .hero-sub, .hero-cta { opacity: 1 !important; transform: none !important; }
-    .grid-dots { opacity: .05 !important; }
+    /* on coupe la respiration mais on laisse le thème fixer l'opacité */
+    .grid-dots { animation: none !important; }
+}
+
+/* ============================================================
+   DARK MODE — surcharges de composants
+   Placé en fin de fichier : ces règles doivent gagner la cascade
+   face aux règles de composants définies plus haut.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+
+    /* Signature du header : noire à l'origine → blanche sur fond sombre.
+       (Celle du footer reste inversée en permanence, le footer est toujours sombre.) */
+    .wordmark-sig { filter: invert(1); }
+
+    /* Les sections toujours sombres se détachent du fond de page */
+    .contact     { background: #0A0C10; }
+    .site-footer { background: #05060A; }
+
+    /* La trame de points a besoin d'un peu plus de présence sur fond sombre */
+    .grid-dots { opacity: .08; }
+    @keyframes breathe {
+        0%, 100% { opacity: .07; background-size: 30px 30px; }
+        50%      { opacity: .11; background-size: 31px 31px; }
+    }
+
+    /* L'accent dark est clair (jaune) : tout ce qui est POSÉ dessus passe en
+       encre sombre, sinon le texte disparaît. */
+    .work-cta    { color: #06080F; }   /* bandeau au survol des cartes */
+    .gallery-btn { color: #06080F; }   /* flèches de galerie */
+
+    /* Ombres plus profondes pour rester lisibles sur fond sombre */
+    .case-navbar { box-shadow: 0 14px 34px -16px rgba(0,0,0,.8); }
+    .to-top      { box-shadow: 0 10px 26px -14px rgba(0,0,0,.85); }
 }
